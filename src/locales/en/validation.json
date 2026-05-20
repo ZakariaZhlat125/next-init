@@ -1,0 +1,65 @@
+{
+  "common": {
+    "required": "This field is required",
+    "invalid": "Invalid value",
+    "tooShort": "Must be at least {minimum} characters",
+    "tooLong": "Cannot exceed {maximum} characters"
+  },
+  "email": {
+    "invalid": "Invalid email address",
+    "required": "Email is required"
+  },
+  "password": {
+    "tooShort": "Password must be at least {minimum} characters",
+    "tooLong": "Password cannot exceed {maximum} characters",
+    "required": "Password is required",
+    "weak": "Password is too weak",
+    "strong": "Password must contain uppercase, lowercase, number and special character"
+  },
+  "name": {
+    "tooShort": "Name must be at least {minimum} characters",
+    "tooLong": "Name cannot exceed {maximum} characters",
+    "required": "Name is required",
+    "invalid": "Name contains invalid characters"
+  },
+  "phone": {
+    "invalid": "Invalid phone number",
+    "required": "Phone number is required"
+  },
+  "url": {
+    "invalid": "Invalid URL",
+    "required": "URL is required"
+  },
+  "date": {
+    "invalid": "Invalid date",
+    "required": "Date is required",
+    "tooEarly": "Date must be after {minimum}",
+    "tooLate": "Date must be before {maximum}"
+  },
+  "number": {
+    "invalid": "Must be a valid number",
+    "tooSmall": "Must be at least {minimum}",
+    "tooBig": "Cannot exceed {maximum}",
+    "required": "This field is required"
+  },
+  "match": {
+    "password": "Passwords do not match",
+    "field": "{field} does not match"
+  },
+  "string": {
+    "tooShort": "Must be at least {minimum} characters",
+    "tooLong": "Cannot exceed {maximum} characters",
+    "invalidEmail": "Invalid email format",
+    "invalidUrl": "Invalid URL format",
+    "invalidUuid": "Invalid UUID format"
+  },
+  "type": {
+    "invalidType": "Expected {expected}, received {received}",
+    "string": "Must be text",
+    "number": "Must be a number",
+    "boolean": "Must be true or false",
+    "date": "Must be a date",
+    "array": "Must be a list",
+    "object": "Must be an object"
+  }
+}

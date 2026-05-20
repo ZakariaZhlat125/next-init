@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "dashboard": "My Dashboard",
+    "profile": "My Profile",
+    "attendance": "My Attendance",
+    "leaves": "My Leaves",
+    "payroll": "My Payroll",
+    "tasks": "My Tasks",
+    "timeEntries": "My Time Tracking"
+  }
+}

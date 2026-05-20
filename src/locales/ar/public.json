@@ -1,0 +1,38 @@
+{
+  "title": "عنوان",
+  "sidebar": {
+    "dashboard": "لوحة التحكم",
+    "users": "المستخدمون",
+    "roles": "الأدوار والصلاحيات",
+    "organizations": "المنظمات",
+    "branches": "الفروع",
+    "attachments": "المرفقات",
+    "activity": "سجل النشاطات",
+    "parties": "الأطراف",
+    "accounts": "شجرة الحسابات",
+    "invoices": "الفواتير",
+    "payments": "المدفوعات",
+    "journal": "اليومية",
+    "reports": "التقارير",
+    "products": "المنتجات",
+    "warehouses": "المستودعات",
+    "stockBalances": "أرصدة المخزون",
+    "stockMovements": "حركات المخزون",
+    "stockTransfer": "نقل المخزون",
+    "stockCount": "جرد المخزون",
+    "employees": "الموظفون",
+    "attendance": "الحضور",
+    "leaves": "طلبات الإجازات",
+    "payroll": "الرواتب",
+    "projects": "المشاريع",
+    "tasks": "المهام",
+    "timeEntries": "تتبع الوقت",
+    "settings": "الإعدادات"
+  },
+  "sections": {
+    "main": "الرئيسية",
+    "accounting": "المحاسبة",
+    "inventory": "المخزون",
+    "settings": "الإعدادات"
+  }
+}

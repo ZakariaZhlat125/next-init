@@ -1,0 +1,10 @@
+{
+  "sidebar": {
+    "dashboard": "Platform Dashboard",
+    "organizations": "All Organizations",
+    "users": "All Users",
+    "roles": "Roles & Permissions",
+    "settings": "System Settings",
+    "audit": "Audit Logs"
+  }
+}

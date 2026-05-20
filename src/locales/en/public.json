@@ -1,0 +1,39 @@
+{
+  "title": "Public Title",
+  "description": "Shared text",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "roles": "Roles & Permissions",
+    "organizations": "Organizations",
+    "branches": "Branches",
+    "attachments": "Attachments",
+    "activity": "Activity Log",
+    "parties": "Parties",
+    "accounts": "Accounts Tree",
+    "invoices": "Invoices",
+    "payments": "Payments",
+    "journal": "Journal",
+    "reports": "Reports",
+    "products": "Products",
+    "warehouses": "Warehouses",
+    "stockBalances": "Stock Balances",
+    "stockMovements": "Stock Movements",
+    "stockTransfer": "Stock Transfer",
+    "stockCount": "Stock Count",
+    "employees": "Employees",
+    "attendance": "Attendance",
+    "leaves": "Leave Requests",
+    "payroll": "Payroll",
+    "projects": "Projects",
+    "tasks": "Tasks",
+    "timeEntries": "Time Tracking",
+    "settings": "Settings"
+  },
+  "sections": {
+    "main": "Main",
+    "accounting": "Accounting",
+    "inventory": "Inventory",
+    "settings": "Settings"
+  }
+}

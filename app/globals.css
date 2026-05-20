@@ -1,8 +1,42 @@
 @import "tailwindcss";
 
 :root {
+  /* Site Colors */
+  --primary: #2CA28B;
+  --primary-hover: #2CA38C;
+  --primary-soft: rgba(44, 162, 139, 0.1);
+  --secondary: #4EC9B7;
+  --success: #2CA28B;
+  --warning: #FC9560;
+  --danger: #FD6E50;
+  --info: #4EC9B7;
+  
+  /* Text Colors */
+  --text: #2F2F2F;
+  --text-secondary: #2F2F2FB2;
+  --text-muted: #2F2F2F80;
+  
+  /* Background & Surface */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2F2F2F;
+  --surface: #f5f5f5;
+  --surface-muted: #e8e8e8;
+  --surface-hover: #ebebeb;
+  
+  /* Border */
+  --border: #e0e0e0;
+  --border-strong: #cccccc;
+  
+  /* Sidebar */
+  --sidebar-bg: #1a1a1a;
+  --sidebar-accent: #2CA28B;
+  --sidebar-text: #ffffff;
+  --sidebar-text-secondary: #ffffff80;
+  --sidebar-logo-bg: #2CA28B;
+  
+  /* Shadows */
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-dark: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 @theme inline {
@@ -16,6 +50,14 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --surface: #1a1a1a;
+    --surface-muted: #252525;
+    --surface-hover: #2a2a2a;
+    --border: #333333;
+    --border-strong: #444444;
+    --sidebar-bg: #0d0d0d;
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-dark: 0 4px 16px rgba(0, 0, 0, 0.4);
   }
 }
 

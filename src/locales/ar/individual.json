@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "dashboard": "لوحة التحكم الخاصة بي",
+    "profile": "ملفي الشخصي",
+    "attendance": "حضوري",
+    "leaves": "إجازاتي",
+    "payroll": "راتبي",
+    "tasks": "مهامي",
+    "timeEntries": "تسجيل وقتي"
+  }
+}
