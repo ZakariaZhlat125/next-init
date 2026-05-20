@@ -41,10 +41,12 @@ export default function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  // Check if it's a public page
+  // Check if it's a public page (with or without locale prefix)
   const isPublicPage = publicPages.some((page) => {
-    const regex = new RegExp(`^/(en|ar)${page}(/.*)?$`);
-    return regex.test(pathname);
+    // Match both /login and /en/login or /ar/login
+    const regexWithLocale = new RegExp(`^/(en|ar)${page}(/.*)?$`);
+    const regexWithoutLocale = new RegExp(`^${page}(/.*)?$`);
+    return regexWithLocale.test(pathname) || regexWithoutLocale.test(pathname);
   });
 
   const isRootPath = pathname === '/' || pathname === '/en' || pathname === '/ar';

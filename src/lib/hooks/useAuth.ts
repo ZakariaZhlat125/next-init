@@ -21,14 +21,14 @@ export function useAuth() {
         password: credentials.password,
       });
 
-      if (response.success && response.data) {
-        const expiresInDays = (response.data.expiresIn || 900) / 86400;
+      // if (response.success && response.data) {
+      //   const expiresInDays = (response.data.expiresIn || 900) / 86400;
         
-        Cookies.set('user', JSON.stringify(response.data.user), { expires: 7, secure: true, sameSite: 'strict' });
-        Cookies.set('accessToken', response.data.accessToken, { expires: 7, secure: true, sameSite: 'strict' });
-        Cookies.set('refreshToken', response.data.refreshToken, { expires: 7, secure: true, sameSite: 'strict' });
-        Cookies.set('expiresIn', String(response.data.expiresIn || 900), { expires: 7, secure: true, sameSite: 'strict' });
-      }
+      //   Cookies.set('user', JSON.stringify(response.data.user), { expires: 7, secure: true, sameSite: 'strict' });
+      //   Cookies.set('accessToken', response.data.accessToken, { expires: 7, secure: true, sameSite: 'strict' });
+      //   Cookies.set('refreshToken', response.data.refreshToken, { expires: 7, secure: true, sameSite: 'strict' });
+      //   Cookies.set('expiresIn', String(response.data.expiresIn || 900), { expires: 7, secure: true, sameSite: 'strict' });
+      // }
 
       // Then, sign in with NextAuth using the response
       const result = await signIn('credentials', {
@@ -52,10 +52,10 @@ export function useAuth() {
     if (response.success && response.data.accessToken) {
       const expiresInDays = (response.data.expiresIn || 900) / 86400;
       
-      Cookies.set('user', JSON.stringify(response.data.user), { expires: 7, secure: true, sameSite: 'strict' });
-      Cookies.set('accessToken', response.data.accessToken, { expires: 7, secure: true, sameSite: 'strict' });
-      Cookies.set('refreshToken', response.data.refreshToken, { expires: 7, secure: true, sameSite: 'strict' });
-      Cookies.set('expiresIn', String(response.data.expiresIn || 900), { expires: 7, secure: true, sameSite: 'strict' });
+      // Cookies.set('user', JSON.stringify(response.data.user), { expires: 7, secure: true, sameSite: 'strict' });
+      // Cookies.set('accessToken', response.data.accessToken, { expires: 7, secure: true, sameSite: 'strict' });
+      // Cookies.set('refreshToken', response.data.refreshToken, { expires: 7, secure: true, sameSite: 'strict' });
+      // Cookies.set('expiresIn', String(response.data.expiresIn || 900), { expires: 7, secure: true, sameSite: 'strict' });
 
       await signIn('credentials', {
         email: data.email,
@@ -69,14 +69,14 @@ export function useAuth() {
 
   const logout = useCallback(async () => {
     try {
-      await authApi.logout();
+      await authApi.logout(); 
     } catch (error) {
       console.error('Logout API error:', error);
     } finally {
-      Cookies.remove('user');
-      Cookies.remove('accessToken');
-      Cookies.remove('refreshToken');
-      Cookies.remove('expiresIn');
+      // Cookies.remove('user');
+      // Cookies.remove('accessToken');
+      // Cookies.remove('refreshToken');
+      // Cookies.remove('expiresIn');
       await signOut({ redirect: false });
       // Extract locale from pathname and preserve it
       const locale = pathname?.split('/')[1] || 'en';
