@@ -1,2 +1,1 @@
-export {};
-// Landing feature components
+export { Landing } from './Landing';

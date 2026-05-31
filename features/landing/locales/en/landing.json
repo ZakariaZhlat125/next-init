@@ -1,1 +1,6 @@
-{}
+{
+  "welcome": "Welcome to TEST",
+  "description": "Your modern platform for managing and growing your business",
+  "getStarted": "Get Started",
+  "learnMore": "Learn More"
+}
